@@ -1,7 +1,9 @@
 package base;
 
-import utils.ReadProperties;
-
-public class SauceLabs extends ReadProperties{
+public class SauceLabs extends Driver{
+	
+	public void setSauceLabs() {
+		
+	}
 
 }
