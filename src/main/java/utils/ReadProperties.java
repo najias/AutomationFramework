@@ -20,14 +20,21 @@ public class ReadProperties {
 			value = prop.getProperty(key);
 
 		}
+		if(value != null){
+			value = value.trim();
+		}
 
-		return value.trim();
+		return value;
 	}
 
 	public static String getSauceLabsProperty(String key) {
 		String value = null;
 		Properties prop = loadProperty("sauceLabs");
 		value = prop.getProperty(key);
+		
+		if(value != null){
+			value = value.trim();
+		}
 
 		return value;
 	}
