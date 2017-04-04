@@ -6,7 +6,27 @@
       <package name="tests"/>
     </packages>
     <classes>
-      <class name="tests.TestSigninPage"/>
+      <class name="tests.TestRegisterFeature"/>
+      <class name="tests.TestSigninFeature"/>
     </classes>
   </test> <!-- Regression Test -->
+  <test name="Regression Test(failed)">
+    <classes>
+      <class name="tests.TestSigninFeature">
+        <methods>
+          <include name="classSetUp"/>
+          <include name="classTearDown"/>
+        </methods>
+      </class> <!-- tests.TestSigninFeature -->
+      <class name="tests.TestRegisterFeature">
+        <methods>
+          <include name="classSetUp"/>
+          <include name="tearDown"/>
+          <include name="classTearDown"/>
+          <include name="testFirstNameWithNumericData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.TestRegisterFeature -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
 </suite> <!-- Failed suite [EliteCareer Automation Suite] -->

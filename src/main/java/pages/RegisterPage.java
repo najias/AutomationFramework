@@ -50,5 +50,11 @@ public class RegisterPage extends PageBase {
 
 	@FindBy(id = "error")
 	public List<WebElement> errorMessage;
+	
+	public void processTextField(WebElement  element , String  text){
+		element.clear();
+		element.sendKeys(text);
+		submitButton.click();
+	}
 
 }
