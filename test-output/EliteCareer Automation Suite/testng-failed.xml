@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [EliteCareer Automation Suite]">
+  <test name="Regression Test">
+    <packages>
+      <package name="tests"/>
+    </packages>
+    <classes>
+      <class name="tests.TestRegisterFeature"/>
+      <class name="tests.TestSigninFeature"/>
+    </classes>
+  </test> <!-- Regression Test -->
+  <test name="Regression Test(failed)">
+    <classes>
+      <class name="tests.TestSigninFeature">
+        <methods>
+          <include name="classSetUp"/>
+          <include name="classTearDown"/>
+        </methods>
+      </class> <!-- tests.TestSigninFeature -->
+      <class name="tests.TestRegisterFeature">
+        <methods>
+          <include name="classSetUp"/>
+          <include name="tearDown"/>
+          <include name="classTearDown"/>
+          <include name="testFirstNameWithNumericData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.TestRegisterFeature -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [EliteCareer Automation Suite] -->
