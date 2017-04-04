@@ -64,6 +64,57 @@ public class TestRegisterFeature extends TestBase{
 		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
 		Assert.assertEquals(registerPage.errorMessage.get(0).getText(), "FirstName must be String");
 	}
+	@Test
+	public void testLastNameWithTwoCharacter() {
+		registerPage.processTextField(registerPage.lastNameField, "ab");
+
+		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
+		Assert.assertEquals(registerPage.errorMessage.get(1).getText(), "*");
+	}
+
+	@Test
+	public void testLastNameWithOneCharacter() {
+		registerPage.processTextField(registerPage.lastNameField, "a");
+
+		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
+		Assert.assertEquals(registerPage.errorMessage.get(1).getText(), "* LastName can not be less than 2 character.");
+	}
+
+	@Test
+	public void testLastNameWithThirtyCharacter() {
+		registerPage.processTextField(registerPage.lastNameField, "MynameisDewanNadiaSultanaShumi");
+
+		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
+		Assert.assertEquals(registerPage.errorMessage.get(1).getText(), "*");
+
+	}
+
+	@Test
+	public void testLastNameWithThirtyOneCharacter() {
+		registerPage.processTextField(registerPage.lastNameField, "My name is Dewan Nadia Sultanaa");
+
+		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
+		Assert.assertEquals(registerPage.errorMessage.get(1).getText(),
+				"* LastName can not be greater than 30 character.");
+
+	}
+
+	@Test
+	public void testLastNameWithEmptyField() {
+		registerPage.processTextField(registerPage.lastNameField, "");
+
+		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
+		Assert.assertEquals(registerPage.errorMessage.get(1).getText(), "* LastName can not be empty.");
+
+	}
+
+	@Test
+	public void testLastNameWithNumericData() {
+		registerPage.processTextField(registerPage.lastNameField, "3452657893456712345678987653");
+
+		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
+		Assert.assertEquals(registerPage.errorMessage.get(1).getText(), "LastName must be String");
+	}
 	
 	@AfterClass
 	public void classTearDown(){
