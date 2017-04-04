@@ -16,7 +16,7 @@ public class ReadProperties {
 
 		if (value == null) {
 			String testEnv = prop.getProperty("testEnv");
-			prop = loadProperty("testEnv");
+			prop = loadProperty(testEnv);
 			value = prop.getProperty(key);
 
 		}

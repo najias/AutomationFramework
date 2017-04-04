@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="EliteCareer Automation Suite" duration-ms="10553" started-at="2017-04-01T20:35:46Z" finished-at="2017-04-01T20:35:57Z">
+    <groups>
+    </groups>
+    <test name="Regression Test" duration-ms="10553" started-at="2017-04-01T20:35:46Z" finished-at="2017-04-01T20:35:57Z">
+      <class name="tests.TestSigninPage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.TestSigninPage@238a763]" name="setUp" is-config="true" duration-ms="4983" started-at="2017-04-01T16:35:41Z" finished-at="2017-04-01T16:35:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:tests.TestSigninPage@238a763]" name="classSetUp" is-config="true" duration-ms="3557" started-at="2017-04-01T16:35:47Z" finished-at="2017-04-01T16:35:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetUp -->
+        <test-method status="PASS" signature="testValidEmailAndValidPassword()[pri:0, instance:tests.TestSigninPage@238a763]" name="testValidEmailAndValidPassword" duration-ms="5211" started-at="2017-04-01T16:35:50Z" finished-at="2017-04-01T16:35:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidEmailAndValidPassword -->
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:tests.TestSigninPage@238a763]" name="classTearDown" is-config="true" duration-ms="1055" started-at="2017-04-01T16:35:56Z" finished-at="2017-04-01T16:35:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classTearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.TestSigninPage@238a763]" name="tearDown" is-config="true" duration-ms="107" started-at="2017-04-01T16:35:57Z" finished-at="2017-04-01T16:35:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.TestSigninPage -->
+    </test> <!-- Regression Test -->
+  </suite> <!-- EliteCareer Automation Suite -->
+</testng-results>

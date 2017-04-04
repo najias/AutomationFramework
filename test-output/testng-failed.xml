@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [EliteCareer Automation Suite]">
+  <test name="Regression Test">
+    <packages>
+      <package name="tests"/>
+    </packages>
+    <classes>
+      <class name="tests.TestSigninPage"/>
+    </classes>
+  </test> <!-- Regression Test -->
+</suite> <!-- Failed suite [EliteCareer Automation Suite] -->

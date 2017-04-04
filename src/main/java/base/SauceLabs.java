@@ -9,7 +9,9 @@ public class SauceLabs extends Driver {
 	DesiredCapabilities caps;
 
 	public void setSauceLabs() {
-		String URL = "https://" + getSauceLabsProperty("userName") + ":" + getSauceLabsProperty("accessKey")
+		String URL = "https://"
+				+ getSauceLabsProperty("userName")
+				+ ":" + getSauceLabsProperty("accessKey")
 				+ "@ondemand.saucelabs.com:443/wd/hub";
 		setCapabilities();
 

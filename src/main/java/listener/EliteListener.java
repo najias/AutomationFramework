@@ -48,7 +48,7 @@ public class EliteListener  implements ITestListener {
 	 */
 	
 	WebDriver driver;
-	private static String environment = TestBase.getProperty("testEnv");
+	private static String environment = TestBase.getProperty("testEnv").toUpperCase();
 	
 	/**
 	 * Document
@@ -56,7 +56,7 @@ public class EliteListener  implements ITestListener {
 	private Document document = null;
 //	private static Date dateTime = new Date();
 	static String TimeNow = EliteListener.now("yyyy-MM-dd_HHmmss");
-	private static String reportDir = System.getProperty("user.dir") + fileSeperator + "Results" + fileSeperator + environment + " " + TimeNow + fileSeperator;
+	private static String reportDir = System.getProperty("user.dir") + fileSeperator + "Results" + fileSeperator + environment + fileSeperator + TimeNow + fileSeperator;
 	
 	/**
 	 * PdfPTables
@@ -163,6 +163,12 @@ public class EliteListener  implements ITestListener {
 
 		String testMethodName = result.getName().toString().trim();
 		String screenShotName = testMethodName + ".png";
+		
+		String screenshotLink = reportDir 
+                + "Screenshots" + fileSeperator +
+                testClassName + fileSeperator +
+                testMethodName + fileSeperator +
+                screenShotName;
 
 		driver = TestBase.driver;
 		if (driver != null) {
@@ -218,7 +224,7 @@ public class EliteListener  implements ITestListener {
 			this.nbExceptions++;
 			
 			 Chunk imdb = new Chunk("[SCREEN SHOT]", FontFactory.getFont(FontFactory.HELVETICA, 10, Font.UNDERLINE, new Color(255, 0, 0)));
-		        imdb.setAction(new PdfAction(screenShotName));
+		        imdb.setAction(new PdfAction(screenshotLink));
 		        Paragraph  excep = new Paragraph(
 		            throwable.toString(), FontFactory.getFont(FontFactory.HELVETICA, 10, Font.NORMAL, new Color(0, 0, 0)));
 		        excep.add(imdb);
