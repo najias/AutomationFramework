@@ -1,33 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="EliteCareer Automation Suite" duration-ms="10553" started-at="2017-04-01T20:35:46Z" finished-at="2017-04-01T20:35:57Z">
+  <suite name="Default suite" duration-ms="15469" started-at="2017-04-04T01:23:07Z" finished-at="2017-04-04T01:23:22Z">
     <groups>
     </groups>
-    <test name="Regression Test" duration-ms="10553" started-at="2017-04-01T20:35:46Z" finished-at="2017-04-01T20:35:57Z">
-      <class name="tests.TestSigninPage">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.TestSigninPage@238a763]" name="setUp" is-config="true" duration-ms="4983" started-at="2017-04-01T16:35:41Z" finished-at="2017-04-01T16:35:46Z">
+    <test name="Default test" duration-ms="15469" started-at="2017-04-04T01:23:07Z" finished-at="2017-04-04T01:23:22Z">
+      <class name="tests.TestSigninFeature">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.TestSigninFeature@44477156]" name="setUp" is-config="true" duration-ms="8804" started-at="2017-04-03T21:22:58Z" finished-at="2017-04-03T21:23:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:tests.TestSigninPage@238a763]" name="classSetUp" is-config="true" duration-ms="3557" started-at="2017-04-01T16:35:47Z" finished-at="2017-04-01T16:35:50Z">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:tests.TestSigninFeature@44477156]" name="classSetUp" is-config="true" duration-ms="2393" started-at="2017-04-03T21:23:07Z" finished-at="2017-04-03T21:23:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="PASS" signature="testValidEmailAndValidPassword()[pri:0, instance:tests.TestSigninPage@238a763]" name="testValidEmailAndValidPassword" duration-ms="5211" started-at="2017-04-01T16:35:50Z" finished-at="2017-04-01T16:35:56Z">
+        <test-method status="PASS" signature="testValidEmailAndValidPassword()[pri:0, instance:tests.TestSigninFeature@44477156]" name="testValidEmailAndValidPassword" duration-ms="3404" started-at="2017-04-03T21:23:09Z" finished-at="2017-04-03T21:23:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidEmailAndValidPassword -->
-        <test-method status="PASS" signature="classTearDown()[pri:0, instance:tests.TestSigninPage@238a763]" name="classTearDown" is-config="true" duration-ms="1055" started-at="2017-04-01T16:35:56Z" finished-at="2017-04-01T16:35:57Z">
+        <test-method status="PASS" signature="testWithEmptyEmailAndEmptyPassword()[pri:0, instance:tests.TestSigninFeature@44477156]" name="testWithEmptyEmailAndEmptyPassword" duration-ms="1475" started-at="2017-04-03T21:23:13Z" finished-at="2017-04-03T21:23:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithEmptyEmailAndEmptyPassword -->
+        <test-method status="PASS" signature="testWithEmptyEmailAndValidPassword()[pri:0, instance:tests.TestSigninFeature@44477156]" name="testWithEmptyEmailAndValidPassword" duration-ms="1411" started-at="2017-04-03T21:23:14Z" finished-at="2017-04-03T21:23:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithEmptyEmailAndValidPassword -->
+        <test-method status="PASS" signature="testWithInValidEmailAndInvalidPassword()[pri:0, instance:tests.TestSigninFeature@44477156]" name="testWithInValidEmailAndInvalidPassword" duration-ms="1421" started-at="2017-04-03T21:23:16Z" finished-at="2017-04-03T21:23:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithInValidEmailAndInvalidPassword -->
+        <test-method status="PASS" signature="testWithValidEmailAndEmptyPassword()[pri:0, instance:tests.TestSigninFeature@44477156]" name="testWithValidEmailAndEmptyPassword" duration-ms="2497" started-at="2017-04-03T21:23:17Z" finished-at="2017-04-03T21:23:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithValidEmailAndEmptyPassword -->
+        <test-method status="PASS" signature="testWithValidEmailAndInvalidPassword()[pri:0, instance:tests.TestSigninFeature@44477156]" name="testWithValidEmailAndInvalidPassword" duration-ms="1402" started-at="2017-04-03T21:23:20Z" finished-at="2017-04-03T21:23:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithValidEmailAndInvalidPassword -->
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:tests.TestSigninFeature@44477156]" name="classTearDown" is-config="true" duration-ms="1046" started-at="2017-04-03T21:23:21Z" finished-at="2017-04-03T21:23:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.TestSigninPage@238a763]" name="tearDown" is-config="true" duration-ms="107" started-at="2017-04-01T16:35:57Z" finished-at="2017-04-01T16:35:57Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.TestSigninFeature@44477156]" name="tearDown" is-config="true" duration-ms="95" started-at="2017-04-03T21:23:22Z" finished-at="2017-04-03T21:23:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.TestSigninPage -->
-    </test> <!-- Regression Test -->
-  </suite> <!-- EliteCareer Automation Suite -->
+      </class> <!-- tests.TestSigninFeature -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
